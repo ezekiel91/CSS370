@@ -1,0 +1,64 @@
+Line 5: First log...
+
+
+
+10/19
+
+User Stories:
+
+User Persona 1: Student Sarah
+
+Name: Sarah Davis
+Age: 18
+Background: High school student
+Personality Traits: Motivated, tech-savvy, easily distracted
+Goals: Maintain focus during homework, improve academic performance
+Challenges: Struggles with distractions from social media, mobile apps, and daydreaming
+Motivations: Wants to achieve better grades and have more free time for hobbies
+
+Sarah starts her homework, but after a while, her mind starts to wander.
+Her brainwave monitoring device detects a decrease in focus and engagement.
+The application sends her a gentle alert, asking if she's distracted.
+Sarah acknowledges the distraction and decides to watch a short motivational video to regain focus.
+After the video, her brainwave pattern stabilizes, indicating improved concentration.
+Sarah continues with her homework until it's completed.
+
+User Persona 1: Math Major Mike
+
+Name: Mike Johnson
+Age: 20
+Background: College student majoring in mathematics
+Personality Traits: Analytical, detail-oriented, passionate about math
+Goals: Maintain deep focus during complex math problem-solving, achieve top grades
+Challenges: Occasionally distracted by the internet or smartphone
+Motivations: Aspires to excel in math and contribute to the field
+
+Mike sits down to work on a challenging calculus assignment.
+He often gets sidetracked by browsing math forums and online lectures.
+The brainwave monitoring device detects a decline in focus.
+The application sends a notification, recommending a short video on advanced calculus.
+Mike watches the video, gains fresh insights, and continues solving his assignment with renewed focus.
+
+From Research:
+
+****Impostant
+Simplicity and Clarity:
+- Keep the interface clean and uncluttered.
+- Use simple and easily understandable language and icons.
+
+Search Functionality:
+- Implement a search feature for videos.
+- Make the search bar easily accessible.
+
+User Onboarding:
+- Create a user-friendly onboarding process to guide new users.
+- Explain how to use the app and highlight key features (connecting headband to bluetooth).
+
+Theming and Dark Mode:
+- Consider offering different themes, including a dark mode option for users who prefer it (so the app is not so bright and distracting when focusing on work).
+
+
+
+first mock up ---> FLow Chart
+
+Second ---> Figma 
