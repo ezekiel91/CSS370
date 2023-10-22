@@ -10,13 +10,13 @@
 
             The code from this:
 
-    fun LikeButton(view: View?) //takes in code from the app button
+    fun LikeButton(view: View?): Boolean
     {
-        //write here to return a like value
+        return true //write here to return a like value
     }
 
-    fun DislikeButton(view: View?)
+    fun DislikeButton(view: View?): Boolean
     {
-        //write here to return a dislike value
+        return false  //write here to return a dislike value
     }
 
