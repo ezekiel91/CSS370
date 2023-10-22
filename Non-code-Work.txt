@@ -1,6 +1,0 @@
-# Sharik Mahmood
-10/18/2023  - Got Android Studios working, updated with BIOS settings to run visualization for android emulator
-            - Created an Understanding for what algorithms need to be implemented
-            - Created this file so we can commit our Non code work and show progress
-
-

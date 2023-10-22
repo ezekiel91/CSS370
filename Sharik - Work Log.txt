@@ -1,0 +1,22 @@
+# Sharik Mahmood
+10/18/2023 
+            - Got Android Studios working, updated with BIOS settings to run visualization for android emulator
+            - Created an Understanding for what algorithms need to be implemented
+            - Created this file so we can commit our Non code work and show progress
+10/21/2023
+            - Figured out how to create a button in kotlin
+            - Figured out how to send the input from the button back to the mainactivity of the program
+            - Need to figure out how to integrate this on to the teams code so it works there
+
+            The code from this:
+
+    fun LikeButton(view: View?) //takes in code from the app button
+    {
+        //write here to return a like value
+    }
+
+    fun DislikeButton(view: View?)
+    {
+        //write here to return a dislike value
+    }
+
