@@ -1,8 +1,8 @@
-Line 5: First log...
+Line 5: First log... 10/19
+Line 65: Second log... 10/25
 
 
-
-10/19
+////////////////////////////////////////     10/19
 
 User Stories:
 
@@ -58,7 +58,24 @@ Theming and Dark Mode:
 - Consider offering different themes, including a dark mode option for users who prefer it (so the app is not so bright and distracting when focusing on work).
 
 
-
 first mock up ---> FLow Chart
 
 Second ---> Figma 
+
+////////////////////////////////////////     10/25
+
+
+
+Work has been on pause because of midterms but my last midterm is on 10/26.
+
+
+I am going to create a flowchart by hand using good notes (on my ipad) because its best to reflect my ideas using my own handwriting and drawing.
+When updated I will upload it to Jira to show my progress.
+
+The flowchart will reflect the flow I want with the ui-ux. This includes: buttons, tabs, different pages, text, and pop ups.
+After my first mock-up I will reflect with the group and ask people (users) for critique.
+Based on that I will make the final flowchart with approval of the group.
+
+After the flowchart I need to start my final draft of the UI. I am planning on using Figma but have to play with it a bit first as it is my first time using that 
+application. I know I can import my work from figma to android studio so it is the best option for now.
+
