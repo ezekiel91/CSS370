@@ -1,6 +1,6 @@
 Line 5: First log... 10/19
 Line 65: Second log... 10/25
-
+Line 82: Third log... 10/28
 
 ////////////////////////////////////////     10/19
 
@@ -79,3 +79,19 @@ Based on that I will make the final flowchart with approval of the group.
 After the flowchart I need to start my final draft of the UI. I am planning on using Figma but have to play with it a bit first as it is my first time using that 
 application. I know I can import my work from figma to android studio so it is the best option for now.
 
+////////////////////////////////////////     10/28
+
+these are the pages im going to have for the flowchart:
+
+signup/login
+Log in
+sign up
+Connect to bluetooth/ example helping user put on headband
+page featuring a search bar (thumbnails)
+video page
+
+---> still a possibilty more pages will be addedd if needed.
+
+Currently I have the flowchar for the starting page, log-in page, sig-up page, and connect to bluetooth/ put on headband page.
+Sent to the group discord for review!
+Will be continuing to work on the other pages for the flowchart... see Jira for progress.
