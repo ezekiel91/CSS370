@@ -1,4 +1,4 @@
-Line 5: First log... 10/19
+Line 5: First log... 10/19                  Line 99: Fourth log... 10/30
 Line 65: Second log... 10/25
 Line 82: Third log... 10/28
 
@@ -92,6 +92,15 @@ video page
 
 ---> still a possibilty more pages will be addedd if needed.
 
-Currently I have the flowchar for the starting page, log-in page, sig-up page, and connect to bluetooth/ put on headband page.
+Currently I have the flowchart for the starting page, log-in page, sig-up page, and connect to bluetooth/ put on headband page.
 Sent to the group discord for review!
 Will be continuing to work on the other pages for the flowchart... see Jira for progress.
+
+////////////////////////////////////////     10/30
+
+Finished the flowchart... see jira flowchart story under the UI/UX epic
+
+Currently I beleive thew flow is pretty gooddd however I feel like we could add more to the video page. right now it is just a page with a video... simple.
+however, I beleive we cuold make it better by possibly having a skip option or a reccomended video option. maybe even an option for liking or disliking a video.
+
+During class later today I will discuss revisions of the flowchart with the rest of the group members.
