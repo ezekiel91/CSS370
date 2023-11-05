@@ -1,6 +1,6 @@
 Line 5: First log... 10/19                  Line 99: Fourth log... 10/30
 Line 65: Second log... 10/25                Line 111: Fifth log... 11/1
-Line 82: Third log... 10/28
+Line 82: Third log... 10/28                 Line 120: Sixth log... 11/4
 
 ////////////////////////////////////////     10/19
 
@@ -116,3 +116,10 @@ As a result, we decided to change from an andriod app to the original project id
 So today I am reworking the flowchart to fit an html webpage.
 I am not sure how I am going to make the final design. I beleive Figma will still work for html webpages so I will stick with that until further notice. I was able to rework half of the flowchart
 and will be completing it later today. See Jira for updates.
+
+////////////////////////////////////////     11/4
+
+I finished reworking the flowchart. I communicated with jacob about the development of the website and we shared ideas about the different pages we will have and what the layout will look like.
+I ended up deleting one of the pages that was unnecessary to better optimize the flow.
+
+For the next sprint I will be working with figma to complete the Ui. It will be rough at first but I will talk about the progress with the group to see what needs to be changed/ emprove, etc.
