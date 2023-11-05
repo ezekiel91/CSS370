@@ -1,19 +1,44 @@
 Dheeraj Singavarapu:
 
-October 16 - 
+October 16(1 hour) - 
 
 Created google document with links to youtube shorts and videos that we can download and use in our project. 
 Also did reserach on how to use Ai captioning apps to caption videos in order to retain attention from users
 At first only decided to find videos pertaining to highschoool math, however realized this would be much more difficult to find short formv videos for that age group.
 Decided to scrap that idea and target kids age range from 5-10 ish instead as teaching math is much easier and thus shorter in videos for that age group
 
-October 18- 
+October 18(1 hour)- 
 Downloaded Android Studios(Screenshot uploaded with time stamp to jira) and began setting up the application and attempting to follow the SDK instructions from brainbit
 
-October 25- 
+October 25(4 hours 1 hour before class and stayed an extra hour after class was done and 2 hours after class at home)- 
 Long break due to midterms but re opened the SDK and got to work. Started off smoothly then slowly started running into problems.
 At first it was very difficult to even navigate android studio or understand what was what and where to implement the SDK.
 I used this video to get a introductory understanding of the app. (https://www.youtube.com/watch?v=BBWyXo-3JGQ)
-After watching this I again began to work on the SDK but I kept getting bugs.
+After watching this I again began to work on the SDK but I kept getting bugs. I attempted to solve the bugs in class when I showed the professor we had many errors that were red
+but after I got home I was able to figure out why we were getting the red errors and eventually got it down to one error. Emailed teacher on how to fix it and followed the instructions given
+by professor. 
 
-October 
+October 27th(2 hours)- 
+Had a group discord call(Screenshot uploaded to jira) with teammates attempting to solve the problems we were getting with the SDK. We tried many different ways of going about pulling the SDK but didn't seem to work.
+We finally were able to figure out a way to use a github repository the brainbit site had opened to the public. We had a working SDK however it was the old SDK so there wasn't much we could do but donwload it and see if it works 
+with the headband on monday.
+
+October 29th(1 hour)-
+Used the professors instructions he sent on how to create an app through android studios. Was able to follow the instructions provided by the professor to create
+an emulator. After following the instructions I troubleshooted again to see if I could pull the new SDK now. After trying for awhile after creating the emulator I stopped and decided to ask in class next day.
+
+
+October 30th(1-2 hour after class)-
+We came to the realization that we can't work through android studio without an android phone. Decided to abandon the app idea and move to HTML.
+Went home and downloaded VS code and watched an introductory course on python(https://www.youtube.com/watch?v=kqtD5dpn9C8) as I was already actively learning Java and python was needed in this code in some sections. 
+After having VS code downloaded I forked the repository given to us by the professor and went over it vaguely to get ready for class on Wedneday to get data.
+
+Novemeber 1st(1 hour after class)-
+In class we were attempting to get Data flowing on one of our devices. Professor suggested Anaconda for the Mac. I came home to it being downloaded and attempted to get to where 
+the professor said I needed to be but kept getting hit with similar errors that were happening while the professor was showing me. After some time of not being able to get to where I needed
+I decided to move on to the other backend of the project for example video stop. I tried some things after looking things up online for video stop but didn't seem to be on the write track.
+Called it a day and came back to it a few days later. 
+
+TALK ABOUT JIRA WORK AS WELL
+
+
