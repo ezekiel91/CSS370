@@ -10,7 +10,7 @@ Decided to scrap that idea and target kids age range from 5-10 ish instead as te
 October 18(1 hour)- 
 Downloaded Android Studios(Screenshot uploaded with time stamp to jira) and began setting up the application and attempting to follow the SDK instructions from brainbit
 
-October 25(4 hours 1 hour before class and stayed an extra hour after class was done and 2 hours after class at home)- 
+October 25(3 hours 1 hour before class and 2 hours after class at home)- 
 Long break due to midterms but re opened the SDK and got to work. Started off smoothly then slowly started running into problems.
 At first it was very difficult to even navigate android studio or understand what was what and where to implement the SDK.
 I used this video to get a introductory understanding of the app. (https://www.youtube.com/watch?v=BBWyXo-3JGQ)
@@ -33,12 +33,27 @@ We came to the realization that we can't work through android studio without an 
 Went home and downloaded VS code and watched an introductory course on python(https://www.youtube.com/watch?v=kqtD5dpn9C8) as I was already actively learning Java and python was needed in this code in some sections. 
 After having VS code downloaded I forked the repository given to us by the professor and went over it vaguely to get ready for class on Wedneday to get data.
 
-Novemeber 1st(1 hour after class)-
+November 1st(1 hour after class)-
 In class we were attempting to get Data flowing on one of our devices. Professor suggested Anaconda for the Mac. I came home to it being downloaded and attempted to get to where 
 the professor said I needed to be but kept getting hit with similar errors that were happening while the professor was showing me. After some time of not being able to get to where I needed
 I decided to move on to the other backend of the project for example video stop. I tried some things after looking things up online for video stop but didn't seem to be on the write track.
 Called it a day and came back to it a few days later. 
 
-TALK ABOUT JIRA WORK AS WELL
+November 3d(1-2 hours)-
+Began gathering all the links to content i've accumalted and downloading them and attempting to use a auto caption ai in an editing app im 
+familiar with. Also began updating the Jira to fit the requirements of our new approach which is a HTML website. As well as updating a timeline for 
+the repository as I was only grabbing screenshots of my work. 
+
+November 4th(2-3 hours)-
+Spent this time attempting figure out the code for stop video. I overcomplicated it and eventually realized that it was literally the play video but
+for stop video. I decided to add more to the Jira as well. Also I realized that maybe people would like the option to replay videos and I spent some time
+researching ways to implement a replay button on the videos. I struggled for a while and came up with some things from stack but wasn't sure if it was being 
+implemented correctly so left it alone. I went from that to a dislike and like button idea so that if someone dislikes the video the program does not show that person
+the video anymore. If liked the video will show up in liked videos and can be viewed when needed. I was just trying to come up with new ideas although it is somewhat frontend.
+I was only able to figure out how to create the buttons but not actually connect them to anything yet.
+
+November 5th(Currently trying to work all day)- 
+
+
 
 
