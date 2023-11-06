@@ -1,0 +1,25 @@
+Jacob Irwin
+
+10/20/2023
+
+-Created Frontend code for Kotlin. Established Firebase database connection and entire front end works. ```` about 12 hours of work
+
+10/25/2023
+
+Watched youtube videos and got the video player working in Kotlin ``` about 2 hours of work
+assisted team with establishing android studio and getting kotlin working. ```` about 1 hour of work
+
+10/29/2023
+
+-Found Brainbit github and sent that to team members it had an example code with working example of brainbit. 
+- joined group chat to help fix gradle issues for Sharik and Deeraj
+
+About 2 hour of work
+
+10/30/2023
+
+Team made decision to switch to HTML/Python and use the professors code due to finacial reasons. about 30 minutes of work
+
+11/2/2023
+Created 4 HTML pages all of which work. One login page One main page one search page and one signup page. Roughly 4 hours of work
+
