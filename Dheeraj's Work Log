@@ -59,7 +59,11 @@ such as centering the videos and buttons surrounding it. Also working on caption
 updating the Jira when I am waiting for content to download or screenrecords to finish. Some of the contnent I've been downloading as they are short form but others I 
 screenrecord as they're very long videos and I only need clips to caption. Also majority of my time is being consumed just doing research on how to do certain things in 
 HTML and java. From watching various tutorial videos on youtube and picking apart what is useful from each one to scowering stack to find help with code. Have also came to 
-realize a lot of the frontend requires CSS which I am not familiar with so have been finding tutorials online for that as well. 
+realize a lot of the frontend requires CSS which I am not familiar with so have been finding tutorials online for that as well. Currently working on small tweaks such as 
+once a video stops playing to trigger the skipvideo() function I implemented. This is so that I know my videoended() function is actually accounting for when the video ends and
+so it can be used later when needed. I also made some tweaks to the like and dislike as when I first implemented it it was allowing me to do both so I changed it so only one
+option is available to click. I am going to try to implement an option to change your mind after you like or dislike and chose the other. Am also contiuing to downlaod and edit 
+clips as I go. 
 
 
 
