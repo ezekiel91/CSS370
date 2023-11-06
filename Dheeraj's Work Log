@@ -63,7 +63,7 @@ realize a lot of the frontend requires CSS which I am not familiar with so have 
 once a video stops playing to trigger the skipvideo() function I implemented. This is so that I know my videoended() function is actually accounting for when the video ends and
 so it can be used later when needed. I also made some tweaks to the like and dislike as when I first implemented it it was allowing me to do both so I changed it so only one
 option is available to click. I am going to try to implement an option to change your mind after you like or dislike and chose the other. Am also contiuing to downlaod and edit 
-clips as I go. 
+clips as I go. Just finished a group call just touching base with one another to make sure everyone is on track to finishing what they can.
 
 
 INDEX.HTML(LATEST)-
