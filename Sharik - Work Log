@@ -19,4 +19,13 @@
     {
         return false  //write here to return a dislike value
     }
-
+11/1/2023
+            - switched from kotlin to Python
+            - Figured out how to set up the github repo on to a machine
+            - got the video player to work 
+            - found SDK website and started learning how to implement it on to the machine
+            - Had problems connecting brainBit to the SDK but aim to resolve the issue by finding a machine that can run it properly by monday 11/6
+11/5/2023
+            - Went through and studied some off the calls needed for this project
+            - looked through the code and found where the code will be needed to be implemented in order to get it running later
+            - Mainly learned how the REST server worked, being able to understand what is happening and where really helps me better how my code will effect the program and why it does work
