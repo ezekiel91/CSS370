@@ -66,15 +66,14 @@ option is available to click. I am going to try to implement an option to change
 clips as I go. Just finished a group call just touching base with one another to make sure everyone is on track to finishing what they can.
 
 
-INDEX.HTML(LATEST)Updated with comments-
-
+INDEX.HTML(LATEST)Updated with comments(So vscode doesn't like when use // sometimes and thinks its text apart of code learned you need to use <!--  --> instead - 
 <!DOCTYPE html>
 <html>
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk" crossorigin="anonymous"></script>
     <style>
-        // center styling for the video container
+        /* Styling for the video container */
         .video-container {
             display: flex;
             flex-direction: column;
@@ -83,7 +82,7 @@ INDEX.HTML(LATEST)Updated with comments-
             height: 80vh;
         }
 
-        // styling for the button container
+        /* Styling for the button container */
         .button-container {
             display: flex;
             justify-content: center;
@@ -102,10 +101,10 @@ INDEX.HTML(LATEST)Updated with comments-
             { src: "movie2.mp4", liked: false, disliked: false }
         ];
 
-        // Initialize the index of the current video playing 
+        // Initialize the index of the currently playing video
         var currentVideoIndex = 0;
 
-        // Function to initiate the video playback
+        // Function for video playback
         function play_start() {
             $.post("/open_api/play_movie", { "data": "somedata", "any": "data" },
                 function(data, textStatus) {
@@ -118,12 +117,12 @@ INDEX.HTML(LATEST)Updated with comments-
                 });
         }
 
-        // Function to track the video ending
+        // Function for the video ending
         function VideoEnded() {
             $.post("/open_api/video_ended", { "data": "somedata", "any": "data" },
                 function(data, textStatus) {
                     console.log(data);
-                    skipVideo();
+                    skipVideo(); // Skip to the next video when the current video ends
                 }, "json").fail(function(response) {
                     console.log("error");
                     console.log(response);
@@ -140,14 +139,14 @@ INDEX.HTML(LATEST)Updated with comments-
             dislikeButton.disabled = currentVideo.liked || currentVideo.disliked;
         }
 
-        // Function to like a video
+        // Function for liking a video
         function likeVideo() {
             videos[currentVideoIndex].liked = true;
             updateButtons();
             console.log("Liked the video");
         }
 
-        // Function to dislike a video
+        // Function for disliking a video
         function dislikeVideo() {
             videos[currentVideoIndex].disliked = true;
             updateButtons();
@@ -179,7 +178,7 @@ INDEX.HTML(LATEST)Updated with comments-
             document.getElementById("myModal").style.display = "block";
         }
 
-        // Function to close the modal
+        // Function to close the modal(modal is like a pop up screen its being used to display the liked and disliked videos)
         function closeModal() {
             document.getElementById("myModal").style.display = "none";
         }
@@ -192,18 +191,18 @@ INDEX.HTML(LATEST)Updated with comments-
         </video>
 
         <div class="button-container">
-            // Like button
+            <!-- Like button -->
             <button id="likeButton" onclick="likeVideo()">Like</button>
-            // Dislike button
+            <!-- Dislike button -->
             <button id="dislikeButton" onclick="dislikeVideo()">Dislike</button>
-            // Skip video button
+            <!-- Skip video button -->
             <button id="skipButton" onclick="skipVideo()">Skip Video</button>
-            // Button to see liked and disliked videos
+            <!-- Button to see liked and disliked videos -->
             <button id="seeLikedAndDislikedButton" onclick="seeLikedAndDislikedVideos()">See Liked and Disliked Videos</button>
         </div>
     </div>
 
-    // Modal for displaying liked and disliked videos(modal is like a popup im using it to display the liked and disliked videos)
+    <!-- Modal for displaying liked and disliked videos -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -212,6 +211,18 @@ INDEX.HTML(LATEST)Updated with comments-
     </div>
 
     <script>
+        // Get the video element
+        var video = document.getElementById("video");
 
+        // Event listener for video play
+        video.addEventListener("play", (event) => {
+            play_start();
+        });
 
-
+        // Event listener for video ending
+        video.addEventListener("ended", (event) => {
+            VideoEnded();
+        });
+    </script>
+</body>
+</html>
