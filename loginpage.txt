@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .login-container {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            margin: 0;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            /* Add your logo image URL below */
+            background-image: url('your_logo.png');
+            background-size: contain;
+            width: 100px; /* Set the width of your logo */
+            height: 100px; /* Set the height of your logo */
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        .form-group label {
+            display: block;
+            text-align: left;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .create-user-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        .login-container.dark-mode {
+            background-color: #444;
+        }
+        .form-group.dark-mode label {
+            color: #fff;
+        }
+        .form-group.dark-mode input {
+            background-color: #555;
+            color: #fff;
+        }
+        .login-button.dark-mode {
+            background-color: #00a2ff;
+            color: #000; /* Inverse text color for dark mode */
+        }
+        .create-user-button.dark-mode {
+            background-color: #4CAF50;
+            color: #000; /* Inverse text color for dark mode */
+        }
+        #mode-toggle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <div class="logo"></div>
+    <h2>MathHead</h2>
+    <form action="your_login_processing_script.php" method="post">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <input type="submit" value="Login" class="login-button">
+    </form>
+    <button class="create-user-button" onclick="createNewUser()">Create New User</button>
+</div>
+<div id="mode-toggle">
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</div>
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+        document.querySelectorAll('.login-container, .form-group, .form-group label, .form-group input, .login-button, .create-user-button').forEach(element => {
+            element.classList.toggle("dark-mode");
+        });
+
+        // Change button text and background color for dark mode
+        const toggleButton = document.querySelector("#mode-toggle button");
+        if (document.body.classList.contains("dark-mode")) {
+            toggleButton.style.backgroundColor = "#fff";
+            toggleButton.style.color = "#000";
+        } else {
+            toggleButton.style.backgroundColor = "#000";
+            toggleButton.style.color = "#fff";
+        }
+    }
+
+    function createNewUser() {
+        // Add your logic for creating a new user here
+        alert("Create New User functionality to be implemented.");
+    }
+</script>
+</body>
+</html>

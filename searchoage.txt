@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+        .header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 24px;
+            color: #ff0000;
+        }
+        .search-bar {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .search-button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .video-item {
+            background-color: #fff;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+        .video-info {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .video-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+        .video-description {
+            font-size: 14px;
+            color: #666;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">MathHead</div>
+        <form action="https://www.youtube.com/results" method="get">
+            <input type="text" class="search-bar" name="search_query" placeholder="Search for videos...">
+            <input type="submit" class="search-button" value="Search">
+        </form>
+    </div>
+
+    <div class="video-container">
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=VIDEO_ID">
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </a>
+            <div class="video-info">
+                <h2 class="video-title">Video Title 1</h2>
+                <p class="video-description">Description of Video 1</p>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=VIDEO_ID">
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </a>
+            <div class="video-info">
+                <h2 class="video-title">Video Title 2</h2>
+                <p class="video-description">Description of Video 2</p>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=VIDEO_ID">
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </a>
+            <div class="video-info">
+                <h2 class="video-title">Video Title 3</h2>
+                <p class="video-description">Description of Video 3</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
