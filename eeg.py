@@ -4,6 +4,8 @@ from neurosdk.brainbit_sensor import BrainBitSensor
 from neurosdk.cmn_types import *
 from tools.logging import logger   
 import pickle
+##from em_st_artifacts.emotional_math import EmotionalMath
+from em_st_artifacts.emotional_math import *
 
 data_col = [] ## This will hold the data for me to put into a file later
 
@@ -45,13 +47,13 @@ def sensorFound(scanner, sensors):
         ads = ArtifactDetectSetting(hanning_win_spectrum=True, num_wins_for_quality_avg=125)
 
         sads = ShortArtifactDetectSetting(ampl_art_extremum_border=25)
-
         mss = MentalAndSpectralSetting()
 
         emotions = EmotionalMath(mls, ads, sads, mss)
         ## Till Here
-        
-        print(emotions) ## This is a Data Structure Including the emotions from the Headband.
+        logger.debug("EMOTIONS HERE")
+        logger.debug(emotions) ## This is a Data Structure Including the emotions from the Headband.
+        logger.debug("END OF EMOTIONS HERE")
 
         dbfile = open('brainbitTest.pcl','ab') ## opens a .pcl file to write binary too
         pickle.dump(data_col, dbfile)   ## dumps the data_col into the dbfile
@@ -75,4 +77,3 @@ gl_scanner.start()
 
 def get_head_band_sensor_object():
     return gl_sensor
-
