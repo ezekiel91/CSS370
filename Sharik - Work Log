@@ -45,6 +45,18 @@ Forgot Date - 1 hours
 
 11/5/2023 - 0.5 hours
             - wrote google Doc for two week sprint submission for the midterm grade
+12/3/2023
+
+here is my python code for my JIRA ticket - Does the user like our video?
+
+#Does the user like the video we presented?
+#parameter - input from headband that gives user retention
+#return - boolean
+def UserRetention(retention): ## retention is a floating value
+    if retention > 0.5: ## greater then half retention value
+        return True ## if the user likes the video we return True
+    else:
+        return False ## if the user does not like the video we return false 
 
 
 
