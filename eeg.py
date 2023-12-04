@@ -78,6 +78,26 @@ gl_scanner.start()
 def get_head_band_sensor_object():
     return gl_sensor
 ## here is code found from -- https://gitlab.com/neurosdk2/neurosamples/-/tree/main/python -- Lets try running this in class monday!
+
+def on_signal_received(sensor, data):
+    raw_channels = [support_classes.RawChannels]
+    for sample in data:
+        left_bipolar = sample.T3-sample.O1
+        right_bipolar = sample.T4-sample.O2
+        raw_channels.append(support_classes.RawChannels(left_bipolar, right_bipolar))
+
+    math.push_data(raw_channels)
+    math.process_data_arr()
+    if not math.calibration_finished():
+        print(f'Artifacted: {math.is_both_sides_artifacted()}')
+        print(f'Calibration percents: {math.get_calibration_percents()}')
+    else:
+        print(f'Artifacted: {math.is_artifacted_sequence()}')
+        print(f'Mental data: {math.read_mental_data_arr()}')
+        print(f'Spectral data: {math.read_spectral_data_percents_arr()}')
+
+    print(data)
+
 try:
     scanner = Scanner([SensorFamily.LEBrainBit, SensorFamily.LEBrainBitBlack])
 
