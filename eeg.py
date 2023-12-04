@@ -34,7 +34,7 @@ def sensorFound(scanner, sensors):
         gl_sensor.connect()
         gl_sensor.signalDataReceived = on_brain_bit_signal_data_received
         
-        # Start of Shariks code --  
+        # Start of Shariks code --  Try to move this to line 15, that might be where this code needs to be 
         ## this code is from the Branbit SDK website under, Initialization (Main Parameters)
         mls = MathLibSetting(sampling_rate=250,
         process_win_freq=25,
