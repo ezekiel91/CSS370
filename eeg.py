@@ -77,3 +77,80 @@ gl_scanner.start()
 
 def get_head_band_sensor_object():
     return gl_sensor
+## here is code found from -- https://gitlab.com/neurosdk2/neurosamples/-/tree/main/python -- Lets try running this in class monday!
+try:
+    scanner = Scanner([SensorFamily.LEBrainBit, SensorFamily.LEBrainBitBlack])
+
+    scanner.sensorsChanged = sensor_found
+    scanner.start()
+    print("Starting search for 5 sec...")
+    sleep(5)
+    scanner.stop()
+
+    sensorsInfo = scanner.sensors()
+    for i in range(len(sensorsInfo)):
+        current_sensor_info = sensorsInfo[i]
+        print(sensorsInfo[i])
+
+
+        def device_connection(sensor_info):
+            return scanner.create_sensor(sensor_info)
+
+
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            future = executor.submit(device_connection, current_sensor_info)
+            sensor = future.result()
+            print("Device connected")
+
+        sensor.sensorStateChanged = on_sensor_state_changed
+        sensor.batteryChanged = on_battery_changed
+
+        if sensor.is_supported_feature(SensorFeature.Signal):
+            sensor.signalDataReceived = on_signal_received
+
+
+        # init emotions lib
+        calibration_length = 8
+        nwins_skip_after_artifact = 10
+
+        mls = lib_settings.MathLibSetting(sampling_rate=250,
+                             process_win_freq=25,
+                             fft_window=1000,
+                             n_first_sec_skipped=4,
+                             bipolar_mode=True,
+                             channels_number=4,
+                             channel_for_analysis=3)
+        ads = lib_settings.ArtifactDetectSetting(hanning_win_spectrum=True, num_wins_for_quality_avg=125)
+        sads = lib_settings.ShortArtifactDetectSetting(ampl_art_extremum_border=25)
+        mss = lib_settings.MentalAndSpectralSetting()
+
+        math = emotional_math.EmotionalMath(mls, ads, sads, mss) 
+
+        logger.debug("EMOTIONS HERE")
+        logger.debug(math) ## This is a Data Structure Including the emotions from the Headband.
+        logger.debug("END OF EMOTIONS HERE")
+        
+        math.set_calibration_length(calibration_length)
+        math.set_mental_estimation_mode(False)
+        math.set_skip_wins_after_artifact(nwins_skip_after_artifact)
+        math.set_zero_spect_waves(True, 0, 1, 1, 1, 0)
+        math.set_spect_normalization_by_bands_width(True)
+
+        if sensor.is_supported_command(SensorCommand.StartSignal):
+            sensor.exec_command(SensorCommand.StartSignal)
+            print("Start signal")
+            math.start_calibration()
+            sleep(120)
+            sensor.exec_command(SensorCommand.StopSignal)
+            print("Stop signal")
+
+        sensor.disconnect()
+        print("Disconnect from sensor")
+        del sensor
+        del math
+
+    del scanner
+    print('Remove scanner')
+except Exception as err:
+    print(err)
+
