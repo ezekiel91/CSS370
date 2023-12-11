@@ -1,8 +1,77 @@
-November 27th(1-2 hours) - 
+November 27th(1 hour) - 
 Began doing research on how to execute the task of holding videos on a server before class. Came to class with a vague understanding 
 of how to hold videos in a server without having all of them in a directory within vs code. In class I was told a json file
 could solve this problem. After class I went home and began researching on ways to implement a json file into a html page to store
 videos for me. 
 
-Novemeber 28th(1 hour)-
-I watchrd a quick video on json files 
+Novemeber 28th(3 hours)-
+I watched a quick video on json files (https://www.youtube.com/watch?v=iiADhChRriM) and then began researching how to play videos within CS code with 
+JSON files. After some research I began writing code in order to play videos using a JSON file. I started with a small JSON file code-
+[
+  {
+    "id": "video1",
+    "title": "Video 1",
+    "url": "file:///path/to/movie.mp4"
+  },
+  {
+    "id": "video2",
+    "title": "Video 2",
+    "url": "file:///path/to/movie2.mp4"
+  }
+ ]
+This did not take me long to write but the function for playing videos via JSON took a second as I did not understand how to go about doing that.
+After a while of struggling I think I gave up and decided to pick up after class the next day as I dont have any more code from this day in my notes.
+So after doing some more research  I was able to find a way to play JSON videos or so I thought I did. I began reworking my code in order to function with a JSON file. After lots of stack and geeksforgeeks searching I was able to come up with a function 
+for playing the JSON videos. It was honestly much simpler then I thought I was just making it hard for no reason. Although bits and pieces of my previous code was 
+altered significantly the below code was the most prevalent in getting the JSON to work I thought-
+
+  $.getJSON("videos.json", function(data) {
+                videos = data;
+                playVideo(0);
+            });
+
+            var currentVideoIndex = 0;
+
+            function playVideo(index) {
+                currentVideoIndex = index;
+                var currentVideo = videos[currentVideoIndex];
+                var videoElement = document.getElementById("video");
+                videoElement.src = currentVideo.url;
+                videoElement.play();
+                updateButtons();
+            }
+
+            function play_start() {
+                $.post("/open_api/play_movie", { "data": "somedata", "any": "data" },
+                    function(data, textStatus) {
+                        console.log(data);
+                    }, "json").fail(function(response) {
+                        console.log("error");
+                        console.log(response);
+                    });
+            }
+
+            function VideoEnded() {
+                $.post("/open_api/video_ended", { "data": "somedata", "any": "data" },
+                    function(data, textStatus) {
+                        console.log(data);
+                        skipVideo();
+                    }, "json").fail(function(response) {
+                        console.log("error");
+                        console.log(response);
+                    });
+            }
+
+Novemeber 29th(1-2 hours after class)-
+So what I realized quickly after testing my code that I came up for the JSON file was that it did not play anything within the videplayer. After asking
+the professor I learned its due to security restrictions and he gave me some advice to try to open it without using chrome or disabling secuirty through the
+terminal. After getting home I attempted to do research on why this was occuring and if there was anyway around it. I found myself in a rabbit hole of videos
+or random forums trying to fix this problem. I wasn't willing to disable security for it so I just kept watching videos on the topic like this(https://www.youtube.com/watch?v=xZd1JWmLGLk)
+but after watching and reading a lot of different things I would realize most of it barely related. I decided to call it a day and instead worked on making the content better that was being
+displayed. 
+
+Dec 2(1 hour)- 
+Took a small break due to other commitments. But on this day I began working towards getting the show Like/Dislike videos to work correctly instead of how it was 
+before. At the end of last sprint I was only able to display the file names for the videos as text. My goal by the end of this sprint was being able to see the videos
+within a pop up so users did not have to naviagate to another page. I tried to challenge myself here and just tweak the modals I already created but ended up just getting
+many errors. 
