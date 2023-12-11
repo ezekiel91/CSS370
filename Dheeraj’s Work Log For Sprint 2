@@ -1,3 +1,6 @@
+All Screenshots of Work are within Jira with timestamps on screenshots. 
+
+
 November 27th(1 hour) - 
 Began doing research on how to execute the task of holding videos on a server before class. Came to class with a vague understanding 
 of how to hold videos in a server without having all of them in a directory within vs code. In class I was told a json file
@@ -75,3 +78,34 @@ Took a small break due to other commitments. But on this day I began working tow
 before. At the end of last sprint I was only able to display the file names for the videos as text. My goal by the end of this sprint was being able to see the videos
 within a pop up so users did not have to naviagate to another page. I tried to challenge myself here and just tweak the modals I already created but ended up just getting
 many errors. 
+
+Dec 4th(3 hours after class)-
+This day I picked up a new task apart from the ones I chose from myself as our groupmates asked for someone to pick it up as no one was working on it.
+I felt as if I could contribute more so I picked up the task of creating a database to store username and passwords. I worked from 10pm - 1 am when I finally 
+finished working and seemed to be done or what I thought was done. 
+
+Dec 5th(2 hours) - 
+Restarted work on the like/dislike page as it was still having trouble working the way I wanted it to. The different iterations I went through are within Jira but during
+this day I was working to get it open videos in a pop up. After some time of trying and many errrors later I called it a day for that. Instead I moved onto the JSON file 
+with what professor showed me on Monday the file was working. However after messing with the file a little I ran into the same problem but in safari. After attempting 
+to go back and fix what I did for a long time I just gave up.
+
+Dec 6th(2 hours after class)-
+Came home and went back at it with the liked/disliked page that wasn't working and finally got it to work how I wanted after many different tries of doing it.
+Then I started finishing up whatever content left I had to edit which took me awhile and I sitll didn't finish with it. 
+
+Dec 8th(1-2 hours) -
+This day I completely spent doing content work and finding new videos instead of the old ones I had as well as improving the captioning to be much 
+more smooth and consitent with what is being said. 
+
+Dec 9th(1-2 hour) - 
+I spent this time finishing downloading and editing all the videos from yesterday and making sure every caption matched the words being said. This took majority of the time
+I spent some final time gathering things together to place in Jira the next day. I also spent time making a hypothetical function for if we got emotion values to print. These functions
+were based on emotions being true or false and either skip video or continue to play video would be triggered.
+
+Dec 10th(2 pm- 11pm with breaks)-
+I spent this entire day just getting everything together putting finishing touches on everything from before. I also spent a large portion of time learning
+how to use PHP files and PHP admin to hold username and passwords. It took a very long time to figure out how to get it working on Macbook as I kept finding videos
+from years ago that were outdated. After Finally coming across the right tutorial it took me even more time to download and configure the necessary files. After everything 
+was set up and I finally opened PHPmyadmin I was finally able to set up the data base. I spent a good amount of time then writing the PHP file in order to establish a connection. 
+I also spent a very long time putting this together as well filling out the Jira with all my work. Finally I spent some time making our groups presentation. 
