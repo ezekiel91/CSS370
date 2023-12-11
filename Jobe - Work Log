@@ -104,49 +104,251 @@ Sprint #2 off the top of my head mainly what I can remember doing this 2nd week 
 11/27/23 (1 hr.)
 
 - After class tried figuring out the stop/end function
+- I read over how html works as we were still getting used to using the repository given by you and figuring out how these functions work on brain bit.
+- I spent some time trying to connect to the brainbit and was running into some difficulties but got some help from peers to clear some things.
+- Planning out how I want this sprint to work out and what tasks I will work on.
 
 11/29/23 (1 hr.)
 
 - Worked on researching more on brainbit functions and how we can get the brain bit connection to work on my device so I could attempt and try to help
  working on other functions on the back end
+- Ran into some issues implementing functions from brain bit when helping backend so took some more time to understand both the brainbit
+  and the repository/html.
+- Reviewing my tasks and trying to help out as well as get help from other members.
 
 11/31/23 (1 hr.)
 
+- I was able to get the connection through my computer so it helped me moving forward to next step on project.
 - Did research on Brainbit emotion functions and tried to help on backend for us to figure out how we can implement these functions into our webpage.
-
+- I made some more edits on the documents I made in order to have a better idea of what I wanted to do moving forward on this sprint.
+- Spent some time just reflecting on work I have done and what I can contribute to the team/ask help for.
+- The methodology was also something I was reflecting on and seeing what I could do better moving forward.
 
 12/4/23 (2hr.)
 
-- Conducted Interview
-- Wrote down notes about what was spoken on based on the document I made during the last sprint.
+- Conducted Interview in which I had a discussion and explained product.
+- Good conversation that helped my soft skills.
+- Wrote down notes about what was spoken on based on the document I made during the last sprint of what questions I wanted to ask.
 
 12/6/23 (1 hr.)
 
-- Found a few more animal and distraction videos we could use
-- Edited and converted videos sent to front end
+- Found a few more animal and distraction videos we could use for front end to test.
+- Edited and converted videos sent to front end, researched a little more on how to convert them and got 
+  a little stuck on sending the emails but they eventually went through as mp4's.
 
 
 12/7/23 (1 hr.)
 
-- Recorded video for tutorial and edited, voiced over the video
+- Recorded video for tutorial and edited it, voiced over the video.
+- The video gives an introduction of our product based on the previous document that I made on the intro and tutorial.
+- I also explained our product and how to put on the headband, the video was then sent to the group.
 
 12/8/23 (2 hr.)
 
 - Editing my questionnaire and feedback questions aswell as making headers that could be implemented into html.
 - Research on how to make Questionnaire and feedback page using html.
+- Spent some time just understanding html and what starting functions we would need for the two pages/\.
 - Research on the use of text areas, and input types such as checkboxes, radios, and texts.
+- Understanding the difference between them and how to format them in order to output on page properly.
 - Research on how to make functions, formatting, and commands to make these html pages function.
 
 12/9/23 (3 hr.)
-- Worked on Questionnaire page
-- Worked on feedback page
+- Worked on Questionnaire page spent a little more time researching on how to format it and what parts we would need.
+- Worked on feedback page also spent a little more time researching to get an understanding of the text boxes in this page.
 - Tried to implement CSS to help make it look better and did some research will try to implement and add on
   after this sprint.
 - Started working with Dheerak on how we would setup our demos and created a powerpoint.
 
+
 12/10/23 (3 hr.)
-- Finished Questionnaire page
-- Finished feedback page
+
+- Finished Questionnaire page made final adjustments to clean it up.
+- Finished feedback page did final edits and fixes so it looks decent.
+- Made final adjustments to the Jira Board and Github to clean everything up and checked over everything
+- Brainstormed ideas of my demo and started figuring out the final steps to finish off this project as I 
+  discussed with my groupmates.
+- Made the final sprint work completed and reflected on the last two sprints, the semester, and what I want
+to do moving forward.
+
+(QUESTIONNAIRE CODE)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+</head>
+<body>
+    <h1>Brainbit Questionnaire</h1>
+    <form method="post" action="process.php">
+        <label> Customer Information </label>
+        <br>
+        First name: <input type="text" name="First">
+        Last name: <input type="text" name="Last">
+        Age: <input type="text" name="Age">
+
+    <h3>Getting to know you</h3>
+    Why do you tend to lose focus? <input type="text" name="Lose">
+    <br>
+    What do you normally do when you lose focus? <input type="text" name="Focus">
+    <br>
+    What distraction videos would intrigue you? <input type="text" name="Distraction">
+    <br>
+    Personalization for site? <input type="text" name="Personalization">
+    <br>
+    What do you hope to achieve and get from using our site? <input type="text" name="Achieve">
+    <br>
+    Anything you would like to disclose about yourself?  <input type="text" name="Disclose">
+    <br>
+
+    <h3>Topics of Interest</h3>
+    <label>Level of learning (grade)</label> 
+    6th grade<input type="radio" name="grade" value="lowest">
+    7th grade<input type="radio" name="grade" value="middle">
+    8th grade<input type="radio" name="grade" value="highest">
+    <br>
+    <label>Topic of interest (math topics)?</label> 
+    Algebra<input type="checkbox" name="interest" value="algebra">
+    Probability<input type="checkbox" name="interest" value="probability">
+    Geometry<input type="checkbox" name="interest" value="geometry">
+    Pre-Calc<input type="checkbox" name="interest" value="pre-calc">
+    <br>
+   <label>Topics of difficulty (topics you struggle with)? </label> 
+    Algebra<input type="checkbox" name="difficulty" value="algebra">
+    Probability<input type="checkbox" name="difficulty" value="probability">
+    Geometry<input type="checkbox" name="difficulty" value="geometry">
+    Pre-Calc<input type="checkbox" name="difficulty" value="pre-calc">
+    <br>
+    <label>Ideal length of a session of learning?</label>
+    15 min.<input type="radio" name="time" value="15">
+    30 min.<input type="radio" name="time" value="30">
+    45 min.<input type="radio" name="time" value="45">
+    60 min+<input type="radio" name="time" value="60">
+    <br>
+    <h3>Customization</h3>
+    
+    <label>Ok with a headband?</label>
+    Yes<input type="radio" name="headband" value="yes">
+    No<input type="radio" name="headband" value="no">
+    <br>
+   <label>Are you comfortable with technology?</label>
+    Yes<input type="radio" name="technology" value="yes">
+    No<input type="radio" name="technology" value="no">
+    <br>
+    <label>Would you like to use this webpage everyday/daily basis?</label>
+    Yes<input type="radio" name="daily" value="yes">
+    No<input type="radio" name="daily" value="no">
+    <br>
+    <label>Would you like to use this for other subjects too?</label>
+    Yes<input type="radio" name="subjects" value="yes">
+    No<input type="radio" name="subjects" value="no">
+    <br>
+    <label>Have you worked with any brain to computer interface apps or sites?</label>
+    Yes<input type="radio" name="apps" value="yes">
+    No<input type="radio" name="apps" value="no">
+    <br>
+    <label>What device do you tend to use or prefer to use?</label>
+    android<input type="radio" name="device" value="android">
+    computer<input type="radio" name="device" value="computer">
+    iphone<input type="radio" name="device" value="iphone">
+    ipad<input type="radio" name="device" value="ipad">
+    <br>
+    <input type="submit" value="submit"/>
+    <input type="reset" value="clear"/>
+    </form>
+</body>
+</html>
 
 
+(FEEDBACK PAGE)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>We want your Feedback!</h1>
+    <form method="post" action="process.php">
+        <label>Follow-up Questions</label>
+        <br>
+        <label>Was the headband uncomfortable?</label>
+        Yes<input type="radio" name="uncomfortable" value="yes">
+        No<input type="radio" name="uncomfortable" value="no">
+        <br>
+        <label>Did the session feel too long or short?</label>
+        Yes<input type="radio" name="length" value="yes">
+        No<input type="radio" name="length" value="no">
+        <br>
+        <label>Are you willing or would you like to do daily sessions?</label>
+        Yes<input type="radio" name="sessions" value="yes">
+        No<input type="radio" name="sessions" value="no">
+        <br>
+        <label>Did the distraction videos help put you back on track or distract you more?</label>
+        Yes<input type="radio" name="distraction" value="yes">
+        No<input type="radio" name="distraction" value="no">
+        <br>
+        <label>Would you like to use our product for other subjects too?</label>
+        Yes<input type="radio" name="subject" value="yes">
+        No<input type="radio" name="subject" value="no">
+        <br>
+        <label>Would you like to collaborate with health professionals?</label>
+        Yes<input type="radio" name="health" value="yes">
+        No<input type="radio" name="health" value="no">
+        <br>
+        <h3>What to improve on?</h3>
+        <br>
+        <label>How would you describe the product?</label>
+        Comments: <textarea name="product" rows="3" cols="40"></textarea>
+        <br>
+        <label>Did you ever start to lose focus and why do you think that's the case? </label>
+        Comments: <textarea name="focus" rows="3" cols="40"></textarea>
+        <br>
+        <label>What videos peaked/didnt peak interest?  </label>
+        Comments: <textarea name="peaked" rows="3" cols="40"></textarea>
+        <br>
+        <label>Did you think this strategy of learning is effective, what else can be done to have a more enjoyable experience? </label>
+        Comments: <textarea name="strategy" rows="3" cols="40"></textarea>
+        <br>
+        <label>Did you enjoy previous experience, or anything you would like to change? </label>
+        Comments: <textarea name="change" rows="3" cols="40"></textarea>
+        <br>
+        <label>What additional features would you like from our webpage that would help your learning? </label>
+        Comments: <textarea name="features" rows="3" cols="40"></textarea>
+        <br>
+        <label>Anything else you would like to discuss? </label>
+        Comments: <textarea name="discuss" rows="3" cols="40"></textarea>
+        
+        <input type="submit" value="submit"/>
+        <input type="reset" value="clear"/>
+
+
+        </form>
+
+</body>
+</html>
+
+
+Summary 
+
+After the reflection from last sprint and getting more comfortable with what we had to do with the project and as 
+a team I felt like I had a better idea of what to do for this sprint. I enjoyed what I got done in this sprint and 
+working with my team. I hope to keep working on both my team skills, communication, technical skills and time management
+moving forward after this class. I appreciated the new scope this class gave me into the CS field and I hope to take what I 
+learned to the next level. I spent a good amount of time understanding html and this was a good time
+to use different resources to learn. I enjoyed the team aspect and this process even led me to conduct an interview which was 
+cool. Below are the links to my work, I added screenshots on Jira and some explainations above of my work. I hope to finish this
+off with a demo of what I have gotten done as well as my team. Making final adjustments to both the Interview notes and the 
+tutorial video but will soon add that. Thanks for the semester.
+
+https://draj23.atlassian.net/jira/software/projects/MT/boards/4/timeline                                Jira Board
+https://docs.google.com/document/d/1anbDKvN9QVXLm0msK2-JIEMU2GwX1yEXhJQ0Am9o1lE/edit?usp=sharing        Distraction Video links
+https://docs.google.com/document/d/1xCzCMwCjneDQtX29W2AyL-Yugnw3lWTLzbmC9NhDzCQ/edit?usp=sharing        Edits to Interview and Feedback document
+https://docs.google.com/document/d/1uCyCWeBMZ7F7d0K1ZV2igmDhLWLf6Q2sy98Tv8h1nSE/edit?usp=sharing        Edits to Questionnaire document
+https://docs.google.com/document/d/1z377mcli5kh7bdtDYaVejQt63Sr_zCl2jJE0C4m-ejQ/edit?usp=sharing        Tutorial and Script for video to show how it works
+https://docs.google.com/document/d/1xwrrPzXqexZVFKqnyzYMYXDCMomlsIsL600sqneC43Q/edit?usp=sharing        Personal Checklist
+https://docs.google.com/document/d/1yLl5bhlhMEXUZo49OqOtTzHhEgDCSXxkRmF44qjqO1Y/edit?usp=sharing        Final Sprint (Part 2) Work Completed document
 
